@@ -83,11 +83,11 @@ export default function App() {
 	return isReady ? (
 		<ThemeProvider theme={theme}>
 			<Container>
-				<Title>To Do List </Title>
 				<StatusBar
 					barStyle='light-content'
 					backgroundColor={theme.background}
 				/>
+				<Title>To Do List </Title>
 				<Input
 					placeholder='+ Add a Task'
 					value={newTask}

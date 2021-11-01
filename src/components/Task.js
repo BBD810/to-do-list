@@ -15,7 +15,7 @@ const Container = styled.View`
 `;
 const Contents = styled.Text`
 	flex: 1;
-	font-size: 24px;
+	font-size: 18px;
 	color: ${({ theme, completed }) => (completed ? theme.done : theme.text)};
 	text-decoration-line: ${({ completed }) =>
 		completed ? 'line-through' : 'none'};
@@ -55,7 +55,7 @@ const Task = ({ item, deleteTask, toggleTask, updateTask }) => {
 			{item.completed || (
 				<IconButton icon={icons.edit} onPress={() => setIsEditing(true)} />
 			)}
-			<IconButton icon={icons.delete} id={item} onPress={deleteTask} />
+			<IconButton icon={icons.delete} item={item} onPress={deleteTask} />
 		</Container>
 	);
 };
