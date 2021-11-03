@@ -17,10 +17,7 @@
 		"ios": {
 			"supportsTablet": false,
 			"bundleIdentifier": "com.inflearn.byeongdo",
-			"buildNumber": "1.0.0",
-			"infoPlist": {
-				"NSPhotoLibraryUsageDescription": "The app accesses the photo library to upload your profile when you are signing up or updating profile."
-			}
+			"buildNumber": "1.0.0"
 		},
 		"android": {
 			"package": "com.inflearn.byeongdo",
